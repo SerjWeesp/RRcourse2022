@@ -7,6 +7,9 @@ setwd("")
 # We need to load the necessary packages if we're operating through an R script.
 
 library(rmarkdown)
+install.packages('chron')
+library(reticulate)
+library(chron)
 
 # We can render an .Rmd document by using the render() function
 
@@ -16,7 +19,7 @@ render("RMD_class_1_cut.Rmd")
 
 render("RMD_class_1_cut.Rmd", output_format = "word_document")   # switches the output format
 
-render("RMD_class_1_cut.Rmd", clean = FALSE)   # tells knitr to keep the intermediate files (e.g. ".md")
+  render("RMD_class_1_cut.Rmd", clean = FALSE)   # tells knitr to keep the intermediate files (e.g. ".md")
 
 # See https://www.rdocumentation.org/packages/rmarkdown/versions/2.6/topics/render for more
 

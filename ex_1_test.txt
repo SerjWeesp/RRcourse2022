@@ -1,0 +1,29 @@
+import unittest
+import sys
+
+def convert(f, target='c'):
+    if target == 'c':
+        return (f - 32) / 1.8
+    elif target == 'k':
+        return ((f - 32) / 1.8) + 273.15
+    else:
+        raise Exception('wrong target')
+
+class TestDivide(unittest.TestCase):
+    def test_convert1(self):
+        self.assertAlmostEqual(convert(50, target='c'), 10)
+        
+    def test_convert2(self):
+        self.assertAlmostEqual(convert(70, target='c'), 21.1111111)
+        
+    def test_convert3(self):
+        self.assertAlmostEqual(convert(90, target='c'), 32.2222222)
+        
+    def test_convert4(self):
+        with self.assertRaises(Exception):
+            convert(-5000, target='r'), 'wrong target')
+        
+    
+        
+if __name__ == '__main__':
+    unittest.main()
