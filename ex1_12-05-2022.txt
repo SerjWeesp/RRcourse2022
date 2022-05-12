@@ -1,0 +1,34 @@
+Welcome to Ubuntu 22.04 LTS (GNU/Linux 5.15.0-1003-gcp x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu May 12 14:51:27 UTC 2022
+
+  System load:  0.0732421875      Processes:             108
+  Usage of /:   19.9% of 9.76GB   Users logged in:       0
+  Memory usage: 20%               IPv4 address for ens4: 10.182.0.2
+  Swap usage:   0%
+
+0 updates can be applied immediately.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+s_amarin@instance-1:~$ uname -a
+Linux instance-1 5.15.0-1003-gcp #6-Ubuntu SMP Thu Mar 31 15:55:23 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+s_amarin@instance-1:~$ touch test.txt
+s_amarin@instance-1:~$ ls -l
+total 0
+-rw-rw-r-- 1 s_amarin s_amarin 0 May 12 14:52 test.txt
+s_amarin@instance-1:~$ 
